@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap');
+body{
+    background-color: #674bb1;
+    background-attachment: fixed; 
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+} 
+html {
+    scroll-behavior: smooth;
+}
+.parent .bg-large {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.bg-mobile {
+    display: none;
+}
+.parent .container {
+    padding: 50px;
+    position: relative;
+}
+.parent .container .text {
+    position: absolute;
+    right: 50px;
+    top: 30vh;
+    color: #fff ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vh;
+}
+.parent .container .text h1 {
+    line-height: 6vh;
+}
+.parent .container .text p {
+    line-height: 20px;
+    margin-top: 20px;
+}
+.parent .container .text button {
+    background: #e980e7;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 20px 0px #00000061;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.parent .container .text button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+.parent .container .img img {
+    width: 100vh;
+    position: absolute;
+    top: 120px;
+}
+.parent .container .logo img {
+    width: 35vh;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.parent .container .links {
+    position: absolute;
+    right: 50px;
+    bottom: -80vh;
+    display: inline-flex;
+    padding: 20px;
+}
+.parent .container .links i {
+    font-size: 30px;
+    color: white;
+    margin-left: 21px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 14px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.parent .container .links i:hover {
+    color: #ff6348;
+    border-color: #ff6348;
+}
+/* Mobile Screens*/
+@media (max-width: 375px) {
+    .bg-large {
+        display: none;
+    }
+    .bg-mobile {
+        display: block;
+    }
+    .parent .container {
+        padding: 25px;
+    }
+    .parent .container .logo img {
+        position: absolute;
+        top: -51vh;
+    }
+    .parent .container .img img {
+        position: absolute;
+        top: -40vh;
+        width: calc( 48vh + 2px);
+    }
+    .parent .container .text {
+        position: unset;
+        text-align: center;
+        width: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .parent .container .links {
+        height: 15vh;
+        top: 50vh;
+        margin: 20px 0;
+    }
+}
