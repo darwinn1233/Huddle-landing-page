@@ -1,2 +1,2 @@
 # training
-just for fun
+template-one-page
