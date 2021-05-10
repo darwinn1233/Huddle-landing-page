@@ -1,2 +1,2 @@
 # training
-template-one-page
+one-page
